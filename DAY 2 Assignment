@@ -1,0 +1,29 @@
+Question 1 :
+Find the output of the following code snippet: 
+int i =0, j = 0;
+int *p = &i, *q = &j;
+q = p;
+*q = 2
+cout<<i<<" "<<j;
+
+Answer:
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	// your code goes here
+	int i =0, j = 0;
+    int *p = &i, *q = &j;
+    q = p;
+    *q = 2;
+    cout<<i<<" "<<j;
+    return 0;
+}
+
+Output:
+//As P is pointing towards the adderess of i and q is pointing towards address of j intialilly then after the assignment 
+of q=p now q starts pointing towards i and and updates the value at i=0 to 2 so values at the output be
+
+2 0 
